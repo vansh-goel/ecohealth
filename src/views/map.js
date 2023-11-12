@@ -1,13 +1,52 @@
-import React from 'react'
+// MapContainer.js
+import React, { Component } from 'react';
+import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import { Link } from 'react-router-dom'
-
 import { Helmet } from 'react-helmet'
-
 import './map.css'
 
-const Map = (props) => {
-  return (
-    <div className="map-container">
+class MapContainer extends Component {
+  state = {
+    greenspaces: [],
+    activeMarker: null,
+    selectedPlace: null,
+  };
+
+  componentDidMount() {
+    this.searchGreenspaces();
+  }
+
+  searchGreenspaces = () => {
+    const { google } = this.props;
+    const service = new google.maps.places.PlacesService(
+      document.createElement('div')
+    );
+
+    service.textSearch({
+      query: 'Greenspaces in Atlanta',
+      location: new google.maps.LatLng({ lat: 33.7490, lng: -84.3880 }),
+      radius: 8000,
+    }, (results, status) => {
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+        this.setState({ greenspaces: results });
+      }
+    });
+  };
+
+  onMarkerClick = (props, marker, e) => {
+    this.setState({
+      activeMarker: marker,
+      selectedPlace: props,
+    });
+  };
+
+
+  render() {
+    const { google } = this.props;
+    const { greenspaces, activeMarker, selectedPlace } = this.state;
+
+    return (
+      <>
       <Helmet>
         <title>Map - EcoHealth+</title>
         <meta property="og:title" content="Map - EcoHealth+" />
@@ -88,20 +127,46 @@ const Map = (props) => {
       <div className="map-hero">
         <div className="map-hero1">
           <div className="map-container1">
-            <img
-              alt="image"
-              src="/ecohealth%2B%20logo-400h.png"
-              className="map-image"
-            />
-            <span className="map-hero-sub-heading">
-              Empowering urban communities for a greener future
-            </span>
+          <Map
+          className="map"
+            google={google}
+            zoom={12}
+            initialCenter={{
+              lat: 33.7490,
+              lng: -84.3880,
+            }}
+            style={{ width: '100%', height: '60%' }}
+          >
+            {greenspaces.map((place) => (
+              <Marker
+                key={place.place_id}
+                position={{
+                  lat: place.geometry.location.lat(),
+                  lng: place.geometry.location.lng(),
+                }}
+                name={place.name}
+                onClick={this.onMarkerClick}
+              />
+            ))}
+            <InfoWindow
+              marker={activeMarker}
+              visible={!!activeMarker}
+              onClose={() => this.setState({ activeMarker: null, selectedPlace: null })}
+            >
+              <div>
+                <h3>{selectedPlace && selectedPlace.name}</h3>
+              </div>
+            </InfoWindow>
+          </Map>
             <div className="map-btn-group"></div>
           </div>
         </div>
       </div>
-    </div>
-  )
+    </>
+    );
+  }
 }
 
-export default Map
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyDKnPQXQqgwlThYL2om8dykd12QHd6d9gY',
+})(MapContainer);

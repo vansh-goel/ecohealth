@@ -7,6 +7,7 @@ import './founders.css'
 
 const Founders = (props) => {
   return (
+    <>
     <div className="founders-container">
       <Helmet>
         <title>Founders - EcoHealth+</title>
@@ -124,6 +125,26 @@ const Founders = (props) => {
         </div>
       </div>
     </div>
+     <div className="founders-details">
+        <div className="founders-details1">
+          <div className="founders-container1">
+            <h2 className="founders-details-heading heading2">
+              Vansh Goel
+            </h2>
+            <span className="founders-details-sub-heading">
+              Vansh is an undergraduate Sophomore at University School of Automation and Robotics, GGSIPU, India. Vansh is passionate for technology and is an avid learner, he believes technology holds the power to bring change and improve our lives for the better. Apart from building projects he also actively takes part in community activities trying to contribute in any way he can to make the world around him a better place. He believes the world could be a better place if we all work together and try to contrubute whatever we can at our individual level.
+            </span>
+          </div>
+          <div className="founders-details-image">
+            <img
+              alt="image"
+              src= "Vansh.jpeg"
+              className="founders-image vansh-img"
+            />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 

@@ -7,6 +7,11 @@
   flex-direction: column;
   justify-content: center;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 .not-found-container1 {
   display: flex;
   position: relative;

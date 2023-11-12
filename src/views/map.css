@@ -153,15 +153,16 @@
   height: var(--dl-size-size-xsmall);
 }
 .map-hero {
-  flex: 0 0 auto;
   width: 100%;
   height: auto;
+  flex-direction: row;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   background-color: var(--dl-color-primary1-blue80);
 }
 .map-hero1 {
+  flex: 0 0 auto;
   width: 100%;
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
@@ -182,6 +183,13 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.map {
+  background-image: linear-gradient(to right, #bdc3c7 0%, green 100%);
+  align-items: center;
+  padding-left: 200px;
+}
+
 .map-image {
   width: 324px;
   height: 320px;
@@ -276,4 +284,17 @@
   .map-btn-group {
     flex-direction: column;
   }
+}
+
+.map-hero {
+  width: 100%;
+}
+
+.map-hero1 {
+  width: 100%;
+}
+
+.map-container1 {
+  width: 100%;
+  height: auto;
 }
