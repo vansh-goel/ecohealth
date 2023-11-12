@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
-
+import PlantCard from '../components/PlantCard'
 import './plants.css'
 
 const Plants = (props) => {
@@ -88,14 +88,11 @@ const Plants = (props) => {
       <div className="plants-hero">
         <div className="plants-hero1">
           <div className="plants-container1">
-            <img
-              alt="image"
-              src="/ecohealth%2B%20logo-400h.png"
-              className="plants-image"
-            />
-            <span className="plants-hero-sub-heading">
-              Empowering urban communities for a greener future
-            </span>
+            <PlantCard />
+            <PlantCard />
+            <PlantCard />
+            <PlantCard />
+            <PlantCard />
             <div className="plants-btn-group"></div>
           </div>
         </div>

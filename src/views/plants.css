@@ -179,7 +179,7 @@
   gap: var(--dl-space-space-twounits);
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
 }
 .plants-image {
@@ -252,6 +252,9 @@
     flex-direction: column;
   }
   .plants-container1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-twounits);
@@ -312,7 +315,7 @@
     align-items: center;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
   .plants-container2 {
@@ -346,9 +349,16 @@
     padding-bottom: var(--dl-space-space-twounits);
   }
   .plants-container1 {
+
     margin-bottom: var(--dl-space-space-unit);
   }
   .plants-btn-group {
     flex-direction: column;
   }
+}
+
+
+.plant-card {
+  display: inline-block;
+  margin-right: 10px;
 }

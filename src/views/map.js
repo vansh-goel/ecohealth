@@ -44,6 +44,7 @@ class MapContainer extends Component {
   render() {
     const { google } = this.props;
     const { greenspaces, activeMarker, selectedPlace } = this.state;
+    const API_KEY = process.env.API_KEY;
 
     return (
       <>
@@ -168,5 +169,5 @@ class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyDKnPQXQqgwlThYL2om8dykd12QHd6d9gY',
+  apiKey: "AIzaSyDKnPQXQqgwlThYL2om8dykd12QHd6d9gY",
 })(MapContainer);
