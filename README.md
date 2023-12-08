@@ -1,6 +1,6 @@
 # EcoHealth+
 
-EcoHealth+ is a project for which we developed a web application that is designed to promote urban eco-development and sustainable living. It offers a range of features to educate and engage users in environmental conservation and sustainable practices.
+EcoHealth+ is a project created during ImpactHack 2023, where we developed a web application that is designed to promote urban eco-development and sustainable living. It offers a range of features to educate and engage users in environmental conservation and sustainable practices.
 
 ## Description
 
