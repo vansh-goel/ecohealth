@@ -10,7 +10,7 @@ function Founders() {
             <h1>Our Founders</h1>
             <div className="founders-container">
                 <div className="founder-card">
-                    <img src={founder1Image} alt="Founder 1" className="founder-image" />
+                    <img src={founder1Image} alt="" className="founder-image" />
                     <div className="founder-info">
                         <h2>Vidit Pokharna</h2>
                         <p>Georgia Institute of Technology</p>
@@ -31,7 +31,7 @@ function Founders() {
                 </div>
 
                 <div className="founder-card">
-                    <img src={founder2Image} alt="Founder 2" className="founder-image" />
+                    <img src={founder2Image} alt="" className="founder-image" />
                     <div className="founder-info">
                         <h2>Vansh Goel</h2>
                         <p>ABC University</p>

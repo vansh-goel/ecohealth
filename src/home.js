@@ -7,7 +7,7 @@ function HomePage() {
         <div className="homepage">
             <Header />
             <section className="project-section">
-                <img src={projectimage} alt="Project" className="project-image" />
+                <img src={projectimage} alt="" className="project-image" />
                 <h2 className="project-text">Empowering urban communities for a greener future</h2>
             </section>
             <section className="about-section">
@@ -27,7 +27,7 @@ function HomePage() {
                         redefining urban living for a sustainable future.</p>
                 </div>
                 <img
-                    alt="image"
+                    alt=""
                     src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTc2MzUzNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
                     className="about-image"
                 />
