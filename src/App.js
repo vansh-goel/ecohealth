@@ -1,5 +1,7 @@
 import React from 'react';
-import './App.css';
+import './nav.css';
+import './home.css';
+import './founders.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './home';
 import Founders from './founders';
