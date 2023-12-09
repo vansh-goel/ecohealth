@@ -33,6 +33,6 @@ To run EcoHealth+ on your local machine, follow these steps:
    
 This will run the app in development mode. Open http://localhost:3000 (unless the port is already being used, for which the 3000 would be a different number) to view it in the browser. The page will reload if you make edits.
 
-## Additional Contributors
-
+## Contributors
+- Vidit Pokharna
 - Vansh Goel
