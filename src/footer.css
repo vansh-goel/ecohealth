@@ -1,0 +1,39 @@
+.footer {
+    background-color: #f8f8f8;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .footer__link {
+    color: black;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-list__item {
+    margin: 0 1rem;
+  }
+  
+  .social-list__link {
+    color: black;
+    font-size: 1.75rem;
+    background-color: orange;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .social-list__link:hover {
+    color: #4CC366;
+    background-color: #e69500;
+  }
+  

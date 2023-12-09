@@ -1,8 +1,8 @@
-.founders-page {
+.partners-page {
   background: linear-gradient(-45deg, #95dcf6, #80d993);
 }
 
-.founders-page h1 {
+.partners-page h1 {
   text-align: center;
   padding: 20px;
   color: #528ceb;
@@ -10,11 +10,11 @@
   font-size: 44px;
 }
 
-.founders-page h1:hover {
+.partners-page h1:hover {
   color: #2e8b57;
 }
 
-.founders-container {
+.partners-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -22,7 +22,7 @@
   padding: 50px;
 }
 
-.founder-card {
+.partners-card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -38,26 +38,24 @@
   padding: 20px;
 }
 
-.founder-image {
-  width: 250px;
-  height: 250px;
+.partners-image {
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
-.founder-info {
+.partners-info {
   padding: 15px;
 }
 
-.founder-info h2 {
-  margin-top: 0;
+.partners-info h2 {
   font-family: "Optima", sans-serif;
   font-weight: 900;
 }
 
-.founder-info p {
-  margin-bottom: 5px;
-  color: #666;
-  font-family: "Gill Sans", sans-serif;
+.partners-info h3 {
+  font-family: "Optima", sans-serif;
+  font-weight: 600;
 }

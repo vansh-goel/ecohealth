@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header';
+import Footer from './footer';
 import projectimage from './ecohealth+.png';
 
 function HomePage() {
@@ -54,6 +55,7 @@ function HomePage() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     );
 }

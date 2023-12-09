@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import Footer from "./footer";
 import founder1Image from "./vp.jpg";
 import founder2Image from "./vg.png";
 
@@ -43,6 +44,7 @@ function Founders() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

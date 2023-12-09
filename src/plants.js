@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header';
+import Footer from "./footer";
 
 // Add pictures to /public/plants folder when adding more plants in here
 const plantData = [
@@ -112,6 +113,7 @@ function Plants() {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 }
